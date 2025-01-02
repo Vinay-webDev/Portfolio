@@ -1,6 +1,6 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import React, { useState, useRef } from 'react';
-import pfp from '../../assets/pfp/pfp.png';
+// import pfp from '../../assets/pfp/pfp.png';
 import './Navbar.css';
 import underline from '../../assets/new/underlinenew3.png';
 import menubar from '../../assets/menu/bar1.png';
@@ -30,7 +30,7 @@ const Navbar = () => {
   }
   return (
     <div className="navbar" >
-        <img className="navbar-img" src={pfp} alt="portfolio-logo"/>
+        {/*<img className="navbar-img" src={pfp} alt="portfolio-logo"/>*/}
         <img onClick={openMenu} src={menubar} alt="menu-bar" className="nav-mob-open"/>
         <ul ref={menuRef} className="nav-menu">
             <img onClick={closeMenu} src={close} alt="close" className="nav-mob-close"/>
