@@ -31,7 +31,7 @@ button === 90deg, #00c6ff, #0072ff
     padding: 5px 10px;
     background: linear-gradient(90deg, #00c6ff, #0072ff);
     border-radius: 25px;
-    font-size: 1.35em;
+    font-size: 1.2em;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -47,11 +47,12 @@ button === 90deg, #00c6ff, #0072ff
 }
 .nav-menu li:hover{
     transition: 0.4s;
-    transform: scale(1.1);
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transform: scale(1.02);
+}
+.nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .nav-socials img{
     margin-left: 0;
@@ -60,10 +61,10 @@ button === 90deg, #00c6ff, #0072ff
     width: 25px;
     height: 25px;
 }
-.nav-socials img:hover {
+/* .nav-socials img:hover {
     transition: 0.4s;
     transform: scale(1.2);
-}
+} */
 .anchor-link{
     text-decoration: none;
     color: white;
