@@ -5,19 +5,30 @@ import urbanShop from '../../assets/projects/urbanshop.png';
 import productStore from '../../assets/projects/productstore.png';
 import portfolio from '../../assets/projects/portfolio.png';
 import jsCertificate from '../../assets/certificates/vinayhc.png';
+import hassantoday from '../../assets/projects/hassantoday.png';
+import hackerrank_vinayhc from '../../assets/certificates/hackerrank_vinayhc.png';
 
 const projectsList = [
   {
     id: 1,
+    name: "Hassan Today",
+    description: "Hassan Today, a simple platform to share news, movie updates, and daily content.",
+    tech: ["React.js","Next.js", "Nodejs", "Strapi cms", "PostgreSQL", "Supabase", "TailwindCSS"],
+    img: hassantoday,
+    github: "",
+    live: "https://hassantoday.com"
+  },
+  {
+    id: 2,
     name: "Urban Shop🛒🛍️",
     description: "A E-commerce website with urban style brands",
     tech: ["React", "Nodejs", "Expressjs", "Zustand", "MongoDB", "TailwindCSS"],
     img: urbanShop,
     github: "https://github.com/Vinay-webDev/UrbanShop.git",
-    live: "https://urban-shop-0b7p.onrender.com"
+    live: "https://youtu.be/VroBjwt8F4Q?si=X9h1hTHqbSndNiVW"
   },
   {
-    id: 2,
+    id: 3,
     name: "Product Store📦",
     description: "A simple MERN stack with CRUD functionalities",
     tech: ["React", "Nodejs", "Expressjs", "MongoDB", "Zustand", "ChakraUI"],
@@ -26,13 +37,13 @@ const projectsList = [
     live:"https://product-store-qxxv.onrender.com"
   },
   {
-    id: 3,
+    id: 4,
     name: "Personal Portfolio👤🏠",
     description: "Play Rock Paper Scissors against AI.",
     tech: ["React", "JavaScript", "HTML5", "CSS3"],
     img: portfolio,
     github: "https://github.com/Vinay-webDev/js-sq-new-ui-rock-paper-scissors.git",
-    live: ""
+    live: "https://vinayhc.vercel.app"
   },
   
 ];
@@ -80,7 +91,7 @@ const miniProjects = [
     ],
     img: mini,
     github: "https://github.com/Vinay-webDev/UrbanShop.git",
-    live: "https://urban-shop-0b7p.onrender.com"
+    live: ""
   }
 ];
 
@@ -124,6 +135,15 @@ const certifications = [
     img: jsCertificate,
     codePen: "https://github.com/Vinay-webDev/js-sq-new-ui-rock-paper-scissors.git",
     live: "https://www.freecodecamp.org/certification/vinayhc/javascript-algorithms-and-data-structures-v8"
+  },
+  {
+    id: 1,
+    name: "Problem Solving (Basic) Certificate",
+    description: "Hackerrank",
+    projects: [],
+    img: hackerrank_vinayhc,
+    codePen: "",
+    live: "https://www.hackerrank.com/certificates/8db65e1d722f"
   }
 ];
 
@@ -138,7 +158,7 @@ const Projects = () => {
       <div className="projects-container">
         {projectsList.map((project) => (
           <div key={project.id} className="project-card">
-            <img src={project.img} alt={project.name} className="project-img" />
+            <img href={project.live} src={project.img} alt={project.name} className="project-img" onClick={() => window.open(project.live, '_blank')} />
             <div className="project-info">
               <h2>{project.name}</h2>
               <p>{project.description}</p>
@@ -150,9 +170,9 @@ const Projects = () => {
                 ))}
               </div>
               <div className='button-container'>
-                <a href={project.github} className="more">
+                {project.github == ""? <></> : <a href={project.github} className="more">
                   GitHub
-                </a>
+                </a>  }
                 <a title="it will take 30 - 40s please wait I'm on free tier😁" href={project.live} className="more">
                   Live
                 </a>
@@ -200,7 +220,8 @@ const Projects = () => {
               <div className="project-info">
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
-                <div className="project-tech">
+                {item.projects? 
+                  <div className="project-tech">
                   {item.projects.map((project) => (
                     <div className='button-container'>
                       <a href={project.live} className="more-new">
@@ -208,7 +229,8 @@ const Projects = () => {
                       </a>
                     </div>
                   ))}
-                </div>
+                </div> : <div></div>
+                }
               </div>
             </div>
           ))}

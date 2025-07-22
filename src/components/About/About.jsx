@@ -32,13 +32,16 @@ const About = () => {
           <div className="skills-wrapper">
             <div className="skills-section">
               <div className="skills-grid">
-                <img src="/icons/HTML5.png" alt="html-5" title='HTML' />
-                <img src="/icons/CSS3.png" alt="css-3" title='CSS' />
-                <img src="/icons/js.png" alt="Javascript" title='Javascript' />
                 <img src="/icons/python.png" alt="python" title='Python'/>
+                <img src="/icons/js.png" alt="Javascript" title='Javascript' />
+                <img src="/icons/TypeScript.png" alt="TypeScript" title='TypeScript' />
+                <img src="/icons/Java.png" alt="Java" title='Java' />
                 <img src="/icons/reactjs.png" alt="reactjs" title='Reactjs'/>
+                <img src="/icons/nextjs1.png" alt="next.js" title='next.js'/>
                 <img src="/icons/nodejs.png" alt="nodejs" title='Nodejs'/>
                 <img src="/icons/expressjswhite.png" alt="expressjs" title='Expressjs' />
+                <img src="/icons/HTML5.png" alt="html-5" title='HTML' />
+                <img src="/icons/CSS3.png" alt="css-3" title='CSS' />
                 <img src="/icons/tailwindcss.png" alt="tailwindcss" title='TailwindCSS'/>
                 <img src="https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg" alt="zustand" title='Zustand'/>
               </div>
@@ -47,14 +50,15 @@ const About = () => {
             <div className="skills-section">
               <div className="skills-grid">
                 <img src="/icons/mongodbnew.png" alt="mongodb" title='MongoDB' />
+                <img src="/icons/MySQL.png" alt="MySQL" title='MySQL' />
+                <img src="/icons/PostgresSQL.png" alt="PostgreSQL" title='PostgreSQL' />
                 <img src="/icons/redis.png" alt="redis" title='Redis'/>
-                <img src="/icons/firebase.png" alt="firebase" title='Firebase' />
+                <img src="/icons/supabase.png" alt="supabase" title='Supabase' />
                 <img src="/icons/git.png" alt="git" title='Git' />
                 <img src="/icons/githubwhite.png" alt="github" title='Github' />
-                <img src="/icons/vercel-white.svg" alt="vercel" title='Vercel' />
+                <img src="/icons/strapicms.png" alt="strapicms" title='Strapicms' />
+                <img src="/icons/coolify.png" alt="coolify" title='coolify' />
                 <img src="/icons/Postman.png" alt="postman" title='Postman'/>
-                <img src="/icons/vscode.png" alt="vscode" title='VScode'/>
-                <img src="/icons/rendernew.jpg" alt="render" title='Render'/>
               </div>
             </div>
           </div>
